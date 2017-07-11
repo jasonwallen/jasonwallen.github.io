@@ -1,0 +1,19 @@
+* {
+    font-family: Optima;
+
+    text-align: center;
+
+    background-color: DarkSlateGray;     
+}
+
+h1, h3 {
+    color: White;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h3{
+    font-size: 14px;
+}
