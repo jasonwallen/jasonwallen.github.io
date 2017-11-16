@@ -15,7 +15,7 @@ h1 {
     background-color: rgb(139, 224, 249);
 }
 
-p{
+p {
     font-size: 26px;
 }
 
@@ -43,7 +43,6 @@ a {
 
 a:hover {background-color: #ff3300;}
 
-li {display: inline;}
 
 /* Style the tab */
 div.tab {
@@ -77,6 +76,6 @@ div.tab button.active {
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: none;
     border-top: none;
 }
