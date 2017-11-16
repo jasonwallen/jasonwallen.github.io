@@ -17,17 +17,63 @@
 </ul>
 </nav>
 
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+  <button class="tablinks" onclick="openCity(event, 'Experience')">Resume</button>
+</div>
+
   </header>
 
-<h1>Welcome to Jason Allen's Website!</h1>
+<div id = "Home" class = "tabcontent">
+  <h1>Welcome to Jason Allen's Website!</h1>
 
-<p>
-  Welcome to my website! Above, you can find </br>
-  a little about me, as well as my experiences. </br>
-  My resume and LinkedIn page are also here.
-</p>
+  <p>
+    Welcome to my website! Above, you can find </br>
+    a little about me, as well as my experiences. </br>
+    My resume and LinkedIn page are also here.
+  </p>
 
-<img src="me_with_my_cat.jpg" alt="Me With My Cat" />
+  <img src="me_with_my_cat.jpg" alt="Me With My Cat" />
+</div>
+
+<div id = "About" class = "tabcontent" >
+  <h1>About Jason Allen</h1>
+
+
+  <p id="early-life" align=left></br>
+    On Monday, March 29, 1999, at 3:03 AM, I was born. I came into the world in </br>
+    Boston, Massachuesetts. I lived the first 18 years of my life in Norwood, Massachuesetts. </br>
+    I went to Callahan Elementary School, the Philip O. Coakely Middle School, and then </br>
+    Norwood High School. I graduated 10th in my class of 240 students and began my studies </br>
+    at Northeastern University, where I am currently pursuing a degree in Computer Engineering </br>
+    and computer science.
+  </p>
+</div>
+
+<script type="text/javascript">
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
 
 
 </body>
