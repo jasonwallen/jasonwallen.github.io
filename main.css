@@ -8,7 +8,7 @@
 
 h1 {
     color: rgb(89, 89, 89);
-    
+
 }
 
 h1 {
@@ -55,6 +55,7 @@ div.tab {
 /* Style the buttons inside the tab */
 div.tab button {
     background-color: inherit;
+    font-size: 26px;
     float: left;
     border: none;
     outline: none;
