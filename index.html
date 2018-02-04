@@ -11,9 +11,9 @@
 
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Home')" id = "defaultOpen">Home</button>
-  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
-  <button class="tablinks" onclick="openCity(event, 'Experience')">Resume</button>
+  <button class="tablinks" onclick="openTab(event, 'Home')" id = "defaultOpen">Home</button>
+  <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+  <button class="tablinks" onclick="openTab(event, 'Experience')">Resume</button>
 </div>
 
   </header>
@@ -26,7 +26,7 @@
     Above, you can find a little about me, as well as my experiences. My resume and LinkedIn page are also here.
   </p>
 
-  <img src="me_in_a_park.JPG" alt="Me In A Park"/>
+  <img src="me_in_a_park.JPG" alt="Me In A Park" height = '200px' width = '300px'/>
 
   <p>
     Me in a park, 2017
@@ -45,7 +45,7 @@
 <script type="text/javascript">
 document.getElementById("defaultOpen").click();
 
-function openCity(evt, cityName) {
+function openTab(evt, tabName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -62,7 +62,7 @@ function openCity(evt, cityName) {
     }
 
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 
 
