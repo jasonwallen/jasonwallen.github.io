@@ -52,61 +52,6 @@
 
 </div>
 
-<div id = "FunPrograms" class = "tabcontent" >
-<p>
-  Here are some fun programs I've written.
-</p>
-
-<script type="text/javascript">
-
-var xPos = 0;
-var yPos = 250;
-
-var w = 100;
-var h = 25;
-
-var w2 = 75;
-var h2 = 30;
-
-function setup() {
-createCanvas(500, 500);
-noStroke();
-fill(102);
-}
-
-function draw() {
-
-background(147, 147, 147);
-
-fill(252, 0, 0);
-rect(xPos, yPos, w, h);
-rect(xPos+12.5, yPos-25, w2, h2);
-
-fill(0, 0, 255);
-textSize(40);
-text("Car Go Zoom!", 110, 140);
-
-fill(102, 59, 59);
-ellipse(xPos+25, yPos+25, 25, 25);
-ellipse(xPos+75, yPos+25, 25, 25);
-
-
-
-if(xPos<500){
-  xPos += 10;
-} else{
-  xPos = -100;
-}
-
-
-}
-
-
-
-</script>
-
-
-</div>
 
 
 <script type="text/javascript">
