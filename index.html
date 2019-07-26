@@ -1,88 +1,48 @@
+<!--
+ - Author: Jason Allen
+ -
+ - Date: July 24, 2019
+ -
+ - Purpose: .html file for the home page
+-->
+
+<!DOCTYPE html>
+
 <html>
-<head>
-    <title>Jason Allen</title>
+  <head>
+      <title>Jason Allen</title>
+      <link href="main.css" type="text/css" rel="stylesheet" />
+      <link href="index.css" type="text/css" rel="stylesheet" />
+  </head>
 
-    <link href="main.css" type="text/css" rel="stylesheet" />
+  <body class="home-page">
+      <div class="tabs">
+        <a href="./index.html" id="item1">Home</a>
+        <a href="./about.html" id="item2">About</a>
+        <a href="./resume.html" id="item3">Resume</a>
+      </div>
 
-</head>
+      <div class = "Home">
+        <h1>Jason Allen</h1>
 
-<body>
-  <header id="page_header">
+        <p>
+          Welcome to my website! </br>
+          I am a Computer Engineering student at Northeastern University. <br>
+          Above, you can find out more about <strong>me</strong> and see my 
+            <a href="http://jason.allenhub.com/media/resume_jason_allen.pdf" target="_blank" id="item3"><em>resume</em></a>.
+          
+        </p>
 
+        <img src="https://i.imgur.com/l91fGwK.jpg" alt="Me holding my cat" height = 50% width = '450px'/>
 
-<div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'Home')" id = "defaultOpen">Home</button>
-  <button class="tablinks" onclick="openTab(event, 'About')">About</button>
-  <button class="tablinks" onclick="openTab(event, 'Experience')">Resume</button>
-  <!--<button class="tablinks" onclick="openTab(event, 'FunPrograms')">Fun Programs</button>-->
-</div>
+        <p id='caption'>
+          Me with my beloved cat, Rocky (circa 2018)
+        </p>
+      </div>
 
-  </header>
+      <div id="background-caption">
+        <p> Mt. Lafayette, 7/5/2019</p>
+      </div>
 
-<div id = "Home" class = "tabcontent" >
-  <h1>Welcome to Jason Allen's Website!</h1>
-
-  <p>
-    Welcome to my website! </br>
-    Above, you can find a little about me, as well as my experiences. Thanks for visiting!
-  </p>
-
-  <img src="media\me_in_a_park.JPG" alt="Me In A Park" height = '300px' width = '450px'/>
-
-  <p id = 'caption'>
-    Heroically posing in Bird Park, 2017
-  </p>
-</div>
-
-<div id = "About" class = "tabcontent" >
-  <h1>About Jason Allen</h1>
-
-  <h2>Brief History</h2>
-
-  <p id="early-life" align=left>
-    On Monday, March 29, 1999, at 3:03 AM, I was born in Boston, Massachuesetts. I lived the first 18 years of my life in Norwood, Massachuesetts. I complete my high school education at Norwood High School. I graduated 10th in a class of 240 students and continued my studies at Northeastern University, where I am currently pursuing a degree in Computer Engineering.
-  </p>
-</div>
-
-<div id = "Experience" class = "tabcontent" >
-
-<embed src="media/resume_jason_allen.pdf" width="750" height="750" type='application/pdf'>
-
-<p>
-  To view my resume in another tab, go <a target="_blank" href="http://jason.allenhub.com/media/resume_jason_allen_1_17_19.pdf">here</a>.
-</p>
-
-</div>
-
-
-<script type="text/javascript">
-document.getElementById("defaultOpen").click();
-
-function openTab(evt, tabName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-
-
-}
-</script>
-
-
-
-</body>
+  </body>
 </html>

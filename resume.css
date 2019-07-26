@@ -1,0 +1,22 @@
+/*
+ * Author: Jason Allen
+ *
+ * Date: July 25, 2019
+ *
+ * Purpose: .css file for resume page
+ */
+
+ .resume-page {
+    background-color: #365902; /* #365902 */
+
+    margin: 0;
+ }
+
+ .resume-page .tabs {
+    background-color: #9FBF2A; /* #9FBF2A */
+    border: 2px solid #000000;
+}
+
+.resume-page .tabs a {
+    color: #000000;
+}

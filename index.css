@@ -1,0 +1,54 @@
+/*
+ * Author: Jason Allen
+ *
+ * Date: July 25, 2019
+ *
+ * Purpose: .css file for home page
+ */
+
+.home-page {
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.473),rgba(255, 255, 255, 0.473)), url('https://i.imgur.com/YnS8Vql.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    border-radius: 20px;
+
+    margin: 0;
+}
+
+.home-page .tabs {
+    background-color: #365902; /* darker, #28402C; lighter, #365902 */
+    border-color: #d8d8d8;
+}
+
+.home-page .tabs a {
+    color: #d8d8d8; /* #d8d8d8 */
+}
+
+.home-page p {
+    background-color: #D9D15F; /* darker, #365939; lighter, #D9D15F */
+    color: #000000;
+    
+    display: table;
+    margin: auto auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+
+.Home h1 {
+    width: 250px;
+    background-color: #9FBF2A; /* darker, #6FA660; lighter, #9FBF2A */
+    border: 1px solid inherit;
+    border-radius: 20px;
+    margin-bottom: 1px;
+}
+
+.home-page strong, .Home a , .home-page em{
+    color: rgb(0, 0, 0); /* dark green, #0B2607 */
+    text-decoration: none;
+}
+
+
