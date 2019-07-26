@@ -1,0 +1,97 @@
+/*
+ * Author: Jason Allen
+ *
+ * Date: July 25, 2019
+ *
+ * Purpose: .css file for about page
+ */
+
+.about-page {
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.212),rgba(255, 255, 255, 0.212)), url('https://i.imgur.com/LfVjn1N.jpg');
+    background-repeat: repeat;
+    background-position: center -90px;
+    background-attachment: fixed;
+
+    color: #ffffff;
+
+    margin: 0;
+}
+
+.about-page h1 {
+    height: 50px;
+    width: 200px;
+
+    background-color: #9FBF2A; /* #9FBF2A */
+
+    border: 1px solid inherit;
+    border-radius: 20px;
+    margin-bottom: 5px;
+
+    position: relative;
+}
+
+.about-page p {
+    display: table;
+    margin: fit-content;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.about-page #brief-history {
+    align-content: center;
+}
+
+.about-page .tabs {
+    background-color: #7A9FBF; /* #7A9FBF */
+    border: 2px solid #000000;
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+
+.about-page .tabs a {
+    color: #000000;
+}
+
+.about-page section {
+    height: 100vh;
+    border: 1px solid transparent;
+    border-bottom-color: #000000;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.about-page #brief-history * {
+    color: #000000;
+}
+
+.about-page #brief-history p, .about-page #brief-history h2 {
+    background-color: #D9C873; /* #D9C873 */
+    border: 1px solid inherit;
+}
+
+.about-page #brief-history h2 {
+    width: 150px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+.about-page #background-caption {
+    font-size: 15px;
+
+    position: fixed;
+    float: right;
+    right: 0px;
+    bottom: 5px;
+    width: max-content;
+
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0px;
+}
