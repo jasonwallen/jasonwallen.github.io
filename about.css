@@ -46,9 +46,6 @@
 .about-page .tabs {
     background-color: #7A9FBF; /* #7A9FBF */
     border: 2px solid #000000;
-    display: flex;
-    position: fixed;
-    top: 0;
 }
 
 .about-page .tabs a {
